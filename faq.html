@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FPT School</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAABj1BMVEX9/f3tcSkckEcbZaT5///9///7//////7///z8/Pz3//////v6/fT+/Pn+/P7tciUAW5/wl2v3nWrwbRf5zrfwbycekEO5z97pahIQkUEAijm73MQ7nl76/vr/+v8NZavqcS05ea/v//8dZaFkkr798OoaaKCvwdU6drnu9/YAU6ifv9vzbh/taADxbivxk2T3ro7pcTDwr4jn8/oAhTz5//NKgb8AVaYAU6wAWqRZjbPQ4e3of0X5YgDyZwD58un55tny0r/rmlbgrYf0oXn0wqXtfTbx28ri7vxwmb08eagteLHO5taVwqRlqXze/eWEsM8Gljgmi0vq7tB7tpaizbTmyqznpn1zkanwiVdGqWtgqHiv1L6R0rLh8+Ww2LzjchJ0wZCuvNpVkcTvx5h8ptbwtZpFfr0AYq9DeaM4frzW6+yJqsIAT5f03sl6osmyyOIAPZG/4vQAQqaZr8C1ytO42MjrdUTemWPhv6XlmHXzkkrt2LbegUvvi2n5zcD0Xyj7iWDvbTn9qnjyfVSve0+eAAAUE0lEQVR4nO2ci1/bRrbHJawZSaMZyUYWFjRjC/EGWY5xHEhtS6bBpiRplzRZWJrdLF1SyiaNyW2bbZsmTZfsH36PhM0r3e7dDb3J9jNfEmzrOT/NmXPOPIwkCQQCgUAgEAgEAoFAIBAIBAKBQCAQCAQCgUAgEAgEAoFAIBAIBAKBQCAQCAQCgUAgEAgEvwA6x9suz4WCJQUR1l7Jn6KNtLddrAuEmrz9gRVF7ime/6Zq0Z+67speteqcYLWR+baLdXGgOFcOA0A+xmmq/LeikBHmD7tO1fPkUwSrvvFbsVJKpLwrn8fu+Bp/20X7j9F1+Df4JRkk7jqvKSy3uU6Pjz8+462W+/+Ieh7TWCt7rymMFIrpzxz+brdNBhVmfDizPn7jxvgRN2/cnKyTRfecQssLtlWsIMb5rY8+vnSKod8VlXc4TDKm1taz2VIpkyn1mchuqKRyvhlasr2ITdPEty6Njd6+PXrCJ7yI37aMX0BHhelMKTORkEmZmMgWpHpoheckBu6KYurkoyu3R4aGhkaOGfsYSeY7bKioMFEChaeYKGVrxTst77ynCdwYm/wu6BsZHUlE9hn7PUTJd1ehWpvInGOidIOpm61D6xSJlYZdDam/Hxs6Ayi9fUt92yr+KRga4XrmvMSJ0rqBt2zvvEJnFZF4aGToHCNj73CIBIW1bGb6fCVmn1BStazgJOFOFQYdxfxobOQMoHD00rtbhaAQPc1OZLKZyfXJAX+4mcnW6nrkdVeHV5/lUirbbiBbrR43Px0a/fTevY/v9fn0yujQ7bs/0wYNcK6IYfbP780w+oW9FwXW1PXsRHZG01TVMAxV1QzVn52YnkNrkTxMFGRgwMSE9JqBZcfG3NjQ2K004BtHsf7WJyNjf/yZOoQEnUpM+QUNBCvKr6fsBDQ+nVnQiJKiaQgZG9cm1jHZKzsdxBhPNmODKWQxsCqGegsU/kkyFUlRCDwAUkR3x8bun9RhmvElmKZBlBj/QkLHDOP/IUtgUi2TmSaGMVdLmJurPVrPZiYWDF6x3DWC43gKiGOdkT3b3iLq728PjXzy5/v37/Mio/Byf+7u2BA7VthP4pIra4Xxp+ifWikcw79qGL++QmQUMpn3DV6bLmWmp6cnStNZiIzXGhzbntvWSS5J3Dy5Cm9Xd8p5U/t0dGRo9MonQ0P3FfzZ0NAn8DN6Dw18aW18d3fy6tUakhilheUFQ2cYQ04omVQvcoWxpI5NkyFeM1ltKVNLalLTTWgtRlL7cPBFN03TWMhkNyhqPM5eyyYkyU0mM4enyl6X1uvVVhloVSmh2ztBW1P7wXB0iCvSpyOjabz/yOwrVBtLpRvjX0zUNESIUVj6CyVg6JJC4EaIFRmGdockpBBjY7mmsI0NyiTCDfBIGvElBM/l4l0PU9/PZJ8aUm3miMJuEhsnMc6XrZxSjL9/0AEerBSLd8KgS/n9gcJ7qjI3dBQax94rDhQ+mp9UdEXniFKqFeb/Qg2qMx2aMYE6VQ3GwKNpiUc7WJ4zFGpgBapQRYZiwG4AnOtF57eUTEOGBp0fRJEG1MeTBO4A88Wyu+gzKqUuSDWJuhlZw6b2x7EjWaN/KpJbfbVj94t0oHB5kpoa0w1/4er41aWZ+uTnWCMHkzWDL8xO7zZqGzf3Zzfmigezpd2rxu6BqZKN2cz6I0MrHNycuDn5SNMvWqHWgPaHKFe1NFj4EDoy09eeIu0fXtQ2uWKCxyQK90lvJ3D3uPlZP6EZvUXUP10ZHU2rk/NiX2FteVeljNDa7NLDyZtLM8r+F0zRxvc/rE8u35wsNWqlg4WD7Gz989n9q7vq/ixTxpd2J5f2a3R3efdg91qpRi9aoVGAYK/SuZkC8OSbv4I++HkkxVXPnjJ5r7OZDpJ2VuXAc9cUdZCoXYEA8XE/o7l7PDilPlp6uHHw+Td0Y35DMwrzM0rpKih8WPILy5MQacH90sRCH6mfP65RtD+rzsCBtLB0oE4uc6p+Of/EuOgQaRxksgtQmMepm8nul6ADNTFeN3tRtypptBm1kpSt7DpW13Gm1EEzHPkEmfzSSL9jYR4rrC3tP5ydnVRn92tcKyydKDxYLqiEEd2vNZ78Ybmhrs/XeKJwcrlmKMrNWfL+fM1Un8wvXPg4l3EDQoOhfZlNe4cTpQlIUScm6/j7yNrGdEq2umEIvUTHCqv2i1h6b6DwY2ze76fgY7eKxwob85Pg+3V6bRxziBYzGBQiY7xUW1+qQZZWn1vf3394ExQeLKd1iG9cm2OaeXV/7v3lOWrMzC/Qi/amc7OZJWg3k2fy7gVKco69SIw1N7T6XcNwx1pV1Lujgw4hKr53pV+d9w1z0A4/hHaoIIyyNzFPrFQvXZWI+jBR+EiDuPD5tYU59S9LDe3z+UdGonB3aY4RMr7vg0JmJHV4we1QbWQzN1V2toc40TBY04vyPlq0nYFC2bM7WP30SOHolfdM8+7QUT//nlrEx1YKvpRqhvZwv0FB4YJe+kLT6Bclf2N+QaUUP7xKqLKRKATrTKz0YP4rSudKX+DdX0vhQrZ0oJL1M1U4zcmU3W3F5PmObA0U7hxGbYiAI32FXP1zWoUjo1c+g1hy0g53E5dlPpkff0QWIKcZz874cw/3a7VrpUKtgCczDUMFhcbB8pcN8KVa49rNWm0ShP0qCk2uq+ul7ELhr9kzCicNslKWq729w8A7VmiFHsW3xvoKL/3u7pW0OkdHrvxZlfBJO5xfWl7+nw9BBfB4hn6VXbr2eClbo09g+3zhq9JSqbT0uGE09ue/VvczirGwNL/89QGnu1+DwpmvF4yLbIfgAvUb6QjUGYGlDQMvOkHVdU/NV8iyXaH4o4GjGbpypf9udOj+qUuyxlcN+DeHtFphptBAcfI6UyAMG7XC069M5sPHJ+A+aa1QoI0G5Bgfziw0VIYbcBAcXMMXOtyD2KNE3bkxjGxDVStyIDvy6eFSr7yH0b2+ozk1CjV67/QVCcS7umFwKUnPVKoRbCQdDWYgk1LT0CGvhtxMg9yMUU2Dvhn8N406g64WVUydU2Ze5Pg5N+uFaxPTpXMC1w3MurJ1bjTYi1ZI/dJrQzSQlJqSetwB5tAtRAjpDBGUdBSgi0s54yAUuhfwGWHODa4gU4O3iilxzcTQ18Bcggw16VHCpgtUqEFn90wLTEPiNGekbSeiTvxoaqUxujU6enYEanTk9l1VZ40nc0xKRyQMDUlm2gdmOvQTkq4CS4A9iXw92cSSpsY0nPR+teSdBL0pSTo66aKHJNXJcxU4sT9RA4V5W36NLrjPsTMKR4ZAoG8ahYNv1snFd+wuAMzmTg+yTUCn4tr7cyooXA1eE2jlsPHZ6MjZKrzykVqUyDcLk08a7+RoG6GNfjp6xLXH7zewxrjhb1uvKXQXCb00doYrd+8jiXNU+LLxB/CWb1vOz8Bw7WnhhKcNJXUZOopfq0LLi3qk/t4p/va3+wMHozae+u9kFaY+QDtFv5QmXjs36eRY1cCrYzOZd+pzaspQO/Id7yJK4h6MYwZjJKZy3T6vUHb2IL3W2DFm8WQmRlHeRQtNgZLyE3A/ndCV3FmFltO1v40NjesndQhx7ThwMcre3Xmnn4Oz5muzal6PvO1iXSC4fbYZOkHQfU7e4TnsfxuSL58RaFvf3SHv8Pznv4++58in5g2fddpYLxL6r0/8r8HnpD9Pk0KTDPm3BYuZpg9gaS/hN0YSE9iJRNP4L4sF/xrjVKhLeEfzFYFAIBAIBIL/kP+eBJVLZv3UKnTF8AdviWJSHSvoZF+SwCVD7QSbGoM9ElWS0W2TM+JjQ1Oxr6kK8ynGSEWqqSACZ2HOTZObvo80AymYSczkksJMhXAkYV8xk1EtnqwuURBOZld1RTMMjCTkY6xi+sZz+YyYndwptnqV/rvVTozrm7nK8a7vOknFKaaJ4+vNcvkfzzcrlS3DlGjRf77atd3mYvv74WfDxR9W0xWMZmd4OHnNU8LNeqcZBm53q40xkcwiNv3eVrMcuc1OHZuMbR7d5UE6xIcNKFO3XO6uPM89e/XGxmISI1e2j4m211r9t27Le046kX38sXUd7sZxkbRftIJDzw4+aAUVI1l+s5osOa0GQbMZRW7cctIr0dX03GiPcKn3bdly5KoXlbdighW9zlfdKIBNXnTY84tkr5zeYTUZqCNUibut4NuqKzej4Ns3HjKhJq64lmdZ6dJYy2u2W8lMKHwIHSuKV8pVC4oPux0rSOqQF0n9x8Bzyt3QsoJqRUMo3o4cJ7BtL/ACqxrWW1ZX9qyIr0bdZIB8T1FWwnJyB9t25KBCESP1SuTIyehBCPfNc7NTtjzZK+dSk2TKMOyJPC8IuuH2G1upZuJ2Jwg872X+5cvtn7wuW9kOnWjv5WLTDq3FzZ/C7XYYhOHKj7a7BwpNzeyBHmslbr/wZHtbMUjF9Ry7Ojy8HXRBYVB/mQvCYGuFr+UdOPLlFG5bVlLBwxXPrkbeKubqYssLXa+Sa5ZDL5DXSPzScpxyZy0xSR21bcsJ8vHUd3YYbV/EkkXUtgK5q2gE9aKgqeBKKNs9QjYjL6w8aEUdxXO9EGozShVy83lkOV5M/KkoajUR7pVBx7Me8eeeHyZfWsDqZaivPaWIY6h8WyVsy4YNm7Hvx7loJ3TWcA/07GzDKcYK3Lr8jCMDLNaNjaR/rUu9yHa6U2pirFHzIhTCMw6qzbjdNvXmtxUVgcKoh0gv2Plpe2U41yZgfuFUnNvupAqLoNCyth+0TX+OTYFJRZ79YgpzyvDzcrnsauiyE4YdgkkMdmgjJXYsuXwdnGpM6k05aG2hrcizqnUlWY/5wJWDoI1BYehOHSnUepEX2D88aNfrbG7qImZJE4XNyItypK5wShKFdhvXn9mh/SOmJiVdUBibPkmjBfjFCOom2AlAJfVNKFu13MEUFSEstHtTPV+9bDtWt9n0XgRJHRprkVUt02QtqYI6sGubbzuWvUgohzPot0G1tYJp1wnLMT1SGMtOULXsQN7e4+pFKax6jjNM0jugSmCF3WrkylCVTEEGqoJnmZKko9karKgd13GqTiDvtKpQth14IGuJP6AQQXERcXTZBWu1Aiim7NhEzUfVqJKs4DJpsdeyvGrchAuupEttmf/jTljuEEl2LHcKEWRwyo09cF3geq3ADuEG5I3HhhKFYWBHw7h+rBCahxzZr1QI0ccKUzSpqJAOPOAg8ZtB2KOB1VeIKUUm4Tq6bMuw3waJoFAx8pEcbKdVoeFeIIfVqWZgRSt+Muhj+tuuE3V4XyEzTYmYxH9QbYHxyqFtB21yQQpf9NZ6uM4GCqtVp1rZNInCzimEQjFO+MqrStOxLc9dxIeWV05zAabgdBk4KKwG13trayvdRCFaK8MTi48izXWo/qaxHVjly2nBi3c8kJYfKOSE5jsrCif+2uqLpht2rWiLGG+4JMOUFFDovOBEJ5xhXUe5QHbzcRwjSNMYk3iqMO4vIDAxaV9eXFxRlLjXhFqq4O+C1NNAlIO67crNGF0Ouq0HEtHiHdlxFR5D2Iv2VKxDE27agfXKXww869s7SXYkPbAdz2oTliiMNS7l3Wgx3lpczRPCkhtYH4DZvpFAXuSkDflJVfGTZwoppvrMPoza2mCCCUlKNwy6scLT5S3gS3st1/Z6kFJuQQPLJcED4vhz3693IOLDM0fX4WUT6ZzJoeUZhKzuOI77/RTxexXXgUik9OAletFTCO24kCYME8TBcH+qF4myVbYX2xGYeE/x0V5gBRX/DYcwwXJW9jzL6eY3E0vj0tTmthXae5uDBUlobdMDn9FZw/pAYSAHTndxLV+15fIi5s/A6wWH23/vJqW1Yp7/Dprx1vd6rwMKw04bnqATQhL09204L4wWFW4sQkoDAeGHqh2Ejg1H5KuQMz3Ib+abNii04ULe3lqn6nmtyz57szokpl+BDDGUA4+CRIzzUQipiXM4sA1lsQXZV9BaJWyg0A4hWkDGCT7/8A7k4Tl4Z1ndn6yuU+2Zd1ruoWcFLZqEd3CUixJ5eRhYh1UvyUO9is6UIn8WQZb6U1j1qsHOcx/vtSBCWnY5iiwvUShbMmS4NiRJHljwm80E6dwfdmUrciF7QIn3XgG9gRN1Bwsq8F7ZDQLHfUVSzaau9Fot+RU8/apsl/eIopP6lhuGkPm1Wt02UtqR68Iji/TVFvjbIMm8/R7k0HARJyq/4hwEmvRyubUDm6JycwVR/3piveB6IRd2IrBS115NDMeLWh2F62/YDhm5Pjw8XFmtXE5WI5mkl4OPudXrA4Uo/+MqbBnu+DRN8xmZ+u7Z5Xgl17W6ubafbNG09lZTdrrDKwTpaOrHXHLCD0onfa2AvTNM8x80w7C5NdVPpJFyZ/EfXrVa6cTgUsjm8Am5fJxb3Yqf56pW9VnvzScrebFIk28zES1dY1BkWvrlJqwMFivg/gSblKY08JESrGlJhsPhpMSANAwZGjLARxmJIRMDJycQyHFQemVW5ApRiMqYQoxBgYuY1OEAhOH6ZlqEAdgkiBioSDilkOq9ce+JYUOnQPFoahc6Q3BhyvHxhc1islibUp3x5BEwDSdfYTMoNTTKSbIJsgLKoXVRLf3+WZFDnx2AC2pwHiPQfSmacAQ8HB0Plmr4rJhcFUI8CDcwPYVOeVGjSfNT4GJv3APWsZYqk44elnYU9ZJ1dQMUnko7mXfSkz/lgjGSTtavYTAACG5H58LhyZKc/reBj36ZyREIm/rgyRX7f45BT74kpJ02RU3SIHcwk+WLF7s6USAQCAQCgUAgEAgEAoFAIBAIBAKBQCAQCAQCgUAgEAgEAoFAIBAIBAKBQCAQCAQCgUAgEAgEAoFAIBAI/h3+F9kOBVvXteOaAAAAAElFTkSuQmCC" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/common-styles.css">
+    <link rel="stylesheet" href="assets/css/common-web.css">
+    <link rel="stylesheet" href="assets/css/faq.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="fixed-bar">
+                <img class="fixed-bar__logo" src="https://hanoi-school.fpt.edu.vn/wp-content/uploads/logo-png-final-e1648632524400.png" alt="">
+                <div class="fixed-bar__icons">
+                    <i class="fixed-bar__icon fa-solid fa-magnifying-glass"></i>
+                    <i class="fixed-bar__icon fa-solid fa-bars"></i>
+                </div>
+            </div>
+            <div class="header__background"></div>
+            <div class="header__center">
+                <p class="header__school-name" href="">
+                    FPT SCHOOL
+                </p>
+                <p class="header__slogan" href="">
+                    trải nghiệm để trưởng thành
+                </p>
+            </div>
+        </header>
+
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="index.html">Trang chủ</a></li>
+                <li class="nav__item"><a class="nav__link" href="about.html">Giới thiệu</a></li>
+                <li class="nav__item"><a class="nav__link" href="contact.html">Liên hệ</a></li>
+                <li class="nav__item"><a class="nav__link" href="feedback.html">Góp ý</a></li>
+                <li class="nav__item nav__text-web-now"><a class="nav__link" href="faq.html">Hỏi đáp</a></li>
+            </ul>
+        </nav>
+        
+        <article>
+            
+            <div class="consultation">
+                <div class="consultation__container">
+                    <img class="consultation__img" src="https://hanoi-school.fpt.edu.vn/wp-content/uploads/HOC-BONG-TAI-NANG-FPT-SCHOOLS.png" alt="">
+                    <div class="consultation__content">
+                        <h3 class="consultation__title title">
+                            Đăng ký tư vấn
+                        </h3>
+                        <form action="" class="form">
+                            <div class="form-row">
+                                <div class="form-group form-group--half">
+                                    <label class="form-label" for="name-student">Họ và tên học sinh *</label> <br>
+                                    <input class="form-input form-input--half" type="text" id="name-student" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label" for="birth-student" >Năm sinh học sinh *</label> <br>
+                                    <input class="form-input form-input--half" max="2024" min="1777" type="number" id="birth-student">
+                                </div>
+                            </div>
+
+                            <div class="form-row ">
+                                <div class="form-group">
+                                    <label class="form-label" for="name-parent">Họ và tên phụ huynh *</label> <br>
+                                    <input class="form-input " type="text" id="name-parent" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row form-group--half">
+                                <div class="form-group">
+                                    <label class="form-label" for="number-phone">Số điện thoại *</label> <br>
+                                    <input class="form-input form-input--half" type="text" id="number-phone" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label" for="email">Email *</label> <br>
+                                    <input class="form-input form-input--half" type="email" id="birth-student">
+                                </div>
+                            </div>
+
+                            <div class="form-row ">
+                                <div class="form-group">
+                                    <label class="form-label" for="school-location" >Chọn cơ sở *</label> <br>
+                                    <select class="form-input form-select" name="" id="school-location" required>
+                                        <option value="">- select -</option>
+                                        <option value="THPT-DN">Trường THPT FPT Đà Nẵng</option>
+                                        <option value="THPT-CT">Trường THPT FPT Cần Thơ</option>
+                                        <option value="THPT-QN">Trường THPT FPT Quy Nhơn</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <input type="submit" class="consultation__form-button form-input form-button" value="Đăng ký">
+                            </div>
+                        </form>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+            <div class="faq__container">
+                <div class="faq__title title">Câu hỏi thường gặp</div>
+                
+                <details class="faq__details">
+                    <summary class="faq__summary">Làm thế nào để đăng ký nhập học tại Trường Phổ Thông FPT?</summary>
+                    <p class="faq__answer">Để đăng ký nhập học, phụ huynh và học sinh cần truy cập trang web của trường, điền vào mẫu đơn đăng ký trực tuyến và nộp các giấy tờ cần thiết. Sau đó, trường sẽ liên hệ để hướng dẫn các bước tiếp theo và tổ chức buổi phỏng vấn hoặc kiểm tra đầu vào.</p>
+                </details>
+
+                <details class="faq__details">
+                    <summary class="faq__summary">Trường có chính sách học bổng không?</summary>
+                    <p class="faq__answer">Trường có chính sách học bổng dành cho học sinh xuất sắc dựa trên kết quả học tập và các thành tích ngoại khóa. Ngoài ra, trường cũng cung cấp các gói hỗ trợ tài chính cho học sinh có hoàn cảnh khó khăn. Học sinh cần nộp đơn xin học bổng và các giấy tờ chứng minh liên quan.</p>
+                </details>
+
+                <details class="faq__details">
+                    <summary class="faq__summary">Các hoạt động ngoại khóa của trường bao gồm những gì?</summary>
+                    <p class="faq__answer">Trường Phổ Thông FPT tổ chức nhiều hoạt động ngoại khóa nhằm phát triển toàn diện cho học sinh. Các câu lạc bộ thể thao (bóng đá, bóng rổ, bơi lội), nghệ thuật (nhạc, kịch, vẽ), khoa học và công nghệ (robotics, lập trình) được tổ chức thường xuyên. Học sinh được khuyến khích tham gia để phát triển kỹ năng mềm và khám phá đam mê của mình.</p>
+                </details>
+
+                <details class="faq__details">
+                    <summary class="faq__summary">Chính sách về việc chuyển trường như thế nào?</summary>
+                    <p class="faq__answer">Nếu học sinh muốn chuyển trường, cần liên hệ với văn phòng trường để nhận được hướng dẫn chi tiết. Quy trình thường bao gồm việc nộp đơn xin chuyển trường, gặp gỡ và thảo luận với ban giám hiệu, và hoàn tất các thủ tục giấy tờ liên quan. Trường sẽ hỗ trợ tối đa để đảm bảo quá trình chuyển trường diễn ra thuận lợi.</p>
+                </details>
+
+                <details class="faq__details">
+                    <summary class="faq__summary">Trường có dịch vụ đưa đón học sinh không?</summary>
+                    <p class="faq__answer">Trường có dịch vụ đưa đón học sinh bằng xe buýt, với các tuyến xe phủ sóng nhiều khu vực khác nhau trong thành phố. Phụ huynh có thể đăng ký dịch vụ này khi nhập học hoặc trong suốt năm học. Dịch vụ này giúp đảm bảo an toàn và tiện lợi cho học sinh khi đi học và về nhà.</p>
+                </details>
+
+                <details class="faq__details">
+                    <summary class="faq__summary">Thời gian học tập và nghỉ lễ của trường như thế nào?</summary>
+                    <p class="faq__answer">Thời gian học tập của Trường Phổ Thông FPT tuân theo lịch học của Bộ Giáo dục và Đào tạo, bao gồm các học kỳ và kỳ thi. Trường cũng có các kỳ nghỉ lễ theo quy định và có thể có thêm các kỳ nghỉ ngắn hạn giữa các học kỳ. Lịch học và nghỉ lễ được thông báo chi tiết trên trang web của trường và cập nhật thường xuyên để phụ huynh và học sinh tiện theo dõi.</p>
+                </details>
+
+            </div>
+
+        </article>
+        
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__contact-info footer__section">
+                    <h3 class="footer__title footer__contact-title">Liên hệ</h3>
+                    <ul class="footer__items">
+                        <li class="footer__contact-item footer__item">
+                            <img class="footer__icon" src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png" alt="">
+                            <span>fptschools@fe.edu.vn</span>
+                        </li>
+                        <li class="footer__contact-item footer__item">
+                            <img class="footer__icon" src="https://thanhdatmoves.com/wp-content/uploads/2020/07/icon-dia-chi.png" alt="">
+                            <span>Khu Giáo dục và Đào tạo, Khu Công nghệ cao Hòa Lạc, Km29 Đại lộ Thăng Long, Thạch Thất, Hà Nội</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h3 class="footer__title">Liên kết nhanh</h3>
+                    <ul class="footer__items">
+                        <li class="footer__item"><a class="footer__link" href="index.html">Trang chủ</a></li>
+                        <li class="footer__item"><a class="footer__link" href="about.html">Giới thiệu</a></li>
+                        <li class="footer__item"><a class="footer__link" href="contact.html">Liên hệ</a></li>
+                        <li class="footer__item"><a class="footer__link" href="feedback.html">Góp ý</a></li>
+                        <li class="footer__item"><a class="footer__link" href="faq.html">Hỏi đáp</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h3 class="footer__title footer__social-title">Kết nối</h3>
+                    <ul class="footer__items">
+                        <li class="footer__social-item footer__item">
+                            <a href="" class="footer__link footer__social-link">
+                                <span>Facebook</span>
+                                <img class="footer__icon" src="https://taphoammo.net/img/tai-khoan-fb-clone-a-nuoi-tren-ios-co-100-200-ban-be_55145.png" alt="">
+                            </a>
+                        </li>
+                        <li class="footer__social-item footer__item">
+                            <a href="" class="footer__link footer__social-link">
+                                <span>Tiktok</span>
+                                <img class="footer__icon" src="https://p16-tiktokcdn-com.akamaized.net/obj/tiktok-obj/abe5e3d50d8e1e67043db3603f1db838" alt="">
+                            </a>
+                        </li>
+                        <li class="footer__social-item footer__item">
+                            <a href="" class="footer__link footer__social-link">
+                                <span>Youtube</span>
+                                <img class="footer__icon" src="https://cdn1.iconfinder.com/data/icons/logotypes/32/youtube-512.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <p class="footer__botoom">FPT School © 2024. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

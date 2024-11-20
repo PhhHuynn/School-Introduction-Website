@@ -1,0 +1,217 @@
+
+
+/* Header */
+header {
+    position: relative;
+}
+
+/* header fix */
+.fixed-bar {
+    z-index: 10;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    height: 65px;
+    padding: 0 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.fixed-bar__logo {
+    width: 100px;
+}
+
+.fixed-bar__icon {
+    background-color: var(--color-orange);
+    border-radius: 3px;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    margin-left: 8px;
+} 
+
+/* header background*/
+.header__background {
+    position: relative;
+    top: 65px;
+    height: var(--height-header-bgr);
+    background-image: url("https://fschool.fpt.edu.vn/wp-content/uploads/2023/11/2020_Gia-tri-TU-TIN.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center -100px;
+    padding-bottom: 25%;
+    opacity: 0.7;
+}
+
+
+/* header center */
+
+.header__center {
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header__school-name {
+    font-size: 45px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.header__slogan {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-variant: small-caps;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+
+
+/* Navbar */
+.nav__text-web-now {
+    font-size: 21px;
+    border-bottom: 6px solid rgb(0, 223, 0)
+}
+
+.nav {
+    margin:  65px auto var(--margin-main-block);
+    padding: 0 20px;    
+    width: var(--width-article);
+    opacity: 1;
+    transform: translateY(-50%);
+    background-color: var(--color-orange);
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.nav__item{
+    list-style-type: none;
+    display: inline-block;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: white;
+    padding: 18px 20px 12px;
+    margin: 0 10px;
+    font-size: 21px;
+    display: inline-block;
+}
+
+/* Article */
+article {
+    max-width: var(--width-article);
+    margin: auto;
+} 
+
+/* Consultation */
+.consultation__container {
+    max-width: 1200px;
+    background-color: var(--color-orange);
+    margin: 0 auto var(--margin-main-block);
+    display: flex;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bóng mờ */
+}
+
+.consultation__img {
+    max-width: 50%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.consultation__content {
+    width: 100%;
+    padding: 50px 30px;
+    color: white;
+}
+
+.consultation__title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.consultation__form-button {
+    color: var(--color-orange);
+}
+
+
+
+/* footer */
+
+
+.footer__container {
+    padding: 40px 70px;
+    border-top: 5px double var(--color-orange);
+    background-color: rgb(255, 226, 207);
+    clear: both;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__section {
+    width: 33%;
+}
+.footer__title {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.footer__item {
+    list-style: none;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 16px;
+}
+
+.footer__link {
+    text-decoration: none;
+    color: black;
+    
+}
+
+.footer__icon {
+    width: 40px;
+    margin: 0 30px;
+}
+
+/* Footer contact */
+.footer__contact-title {
+    margin-left: 30px;
+    text-align: left;
+}
+
+.footer__contact-item {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+/* Footer social */
+.footer__social-title {
+    margin-right: 30px;
+    text-align: right;
+}
+
+.footer__social-link {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.footer__botoom {
+    text-align: center;
+    background-color: gray;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+
